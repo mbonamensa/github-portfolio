@@ -35,7 +35,7 @@ function Home() {
     const userElements = user.map((userElement) => {
         return (
             <div className="repo-card" key={userElement.id}>
-                <Link to={`/repodetails/${userElement.name}`}><h2 className="repo-name">{userElement.name}</h2></Link>
+                <Link to={`./repodetails/${userElement.name}`}><h2 className="repo-name">{userElement.name}</h2></Link>
                 <p className="language">Langauge: {userElement.language === null ? "none" : userElement.language}</p>
                 <p className="date">Start date & time: {userElement.created_at}</p>
                 <p className="visibility">Visibility: {userElement.visibility}</p>
